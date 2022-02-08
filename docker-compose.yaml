@@ -21,7 +21,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
-      - MONGO_INITDB_DATABASE=analytics
+      - MONGO_INITDB_DATABASE=
+      {
 
   mongo-express:
     image: mongo-express:0.54.0

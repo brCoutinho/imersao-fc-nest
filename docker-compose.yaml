@@ -3,7 +3,7 @@ version: '3'
 services:
   app:
     build: .
-    entrypoint: sh -c "npm install && npm run start:dev"
+    entrypoint: .docker/entrypoint.sh
     volumes:
       - .:/home/node/app
     ports:
